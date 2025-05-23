@@ -6,6 +6,9 @@ import Login from "./routes/login";
 import CreateAccount from "./routes/create-accout";
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
+import { useEffect } from "react";
+import LoadingScreen from "./components/loading-screen";
+import { useState } from "react";
 
 const router = createBrowserRouter([
   {
@@ -42,10 +45,17 @@ font-family: 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 `;
 
 function App() {
+  const [isLoading, setLoading] = useState(true);
+  const init = async () => {
+    setLoading(false);
+  };
+  useEffect(() => {
+    init();
+  }, []);
   return (
     <>
       <GlobalStyles />
-      <RouterProvider router={router} />
+      {isLoading ? <LoadingScreen /> : <RouterProvider router={router} />}
     </>
   );
 }
