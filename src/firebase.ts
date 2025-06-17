@@ -1,5 +1,5 @@
-
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCA5N3QXX1F2pzXiYqNXiIkrXeKLIxpL5U",
@@ -7,8 +7,9 @@ const firebaseConfig = {
   projectId: "nwitter-reloaded-2197c",
   storageBucket: "nwitter-reloaded-2197c.firebasestorage.app",
   messagingSenderId: "581444183493",
-  appId: "1:581444183493:web:301ac311527da33f78d7ac"
+  appId: "1:581444183493:web:301ac311527da33f78d7ac",
 };
 
-
 const app = initializeApp(firebaseConfig);
+
+export const auth = getAuth(app);
