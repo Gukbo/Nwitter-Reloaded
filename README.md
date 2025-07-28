@@ -1,8 +1,19 @@
 X clone coding
 
+노마드코더 프로젝트 중 하나인 트위터 클론 코딩을 진행했다.
+
+주로 사용한 것
+
+typescript + react + styled css + firebase
+
+-----------
+
 로그인 + 회원가입
 
 <img width="590" height="432" alt="image" src="https://github.com/user-attachments/assets/699b488f-f72b-4c34-ac34-96b454f2efc4" />
+<br/>
+<br/>
+------------
 
 
 메인 화면
