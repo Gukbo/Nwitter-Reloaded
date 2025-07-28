@@ -6,7 +6,7 @@ https://nwitter-reloaded-2197c.web.app/
 
 주로 사용한 것
 
-typescript + react + styled css + firebase
+typescript + react + styled components + firebase
 
 -----------
 
