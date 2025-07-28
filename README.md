@@ -2,6 +2,8 @@ X clone coding
 
 노마드코더 프로젝트 중 하나인 트위터 클론 코딩을 진행했다.
 
+https://nwitter-reloaded-2197c.web.app/
+
 주로 사용한 것
 
 typescript + react + styled css + firebase
